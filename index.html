@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0d0b">
+<title>المتوفية / سهام عبدالفتاح محمود محمد كامل — آيات وأدعية</title>
+<meta name="description" content="صفحة عزاء للمتوفية سهام عبدالفتاح محمود محمد كامل: آيات عن الموت، وسورة الفاتحة، والمعوذات، وأدعية، وأذكار وتسبيحات.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-image: url("1.jpeg");
+  --bg-brightness: .92;
+  --bg-saturation: .95;
+  --bg-contrast: 1.02;
+
+  --gold:#c8a86a;
+  --gold-soft:#e6d0a1;
+  --paper:#efe9dd;
+  --muted:#a29b8d;
+  --line:rgba(200,168,106,.30);
+  --line-soft:rgba(200,168,106,.16);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html,body{
+  height:100%;
+  overflow:hidden;
+  overscroll-behavior:none;
+}
+
+body{
+  font-family:'Tajawal',system-ui,-apple-system,sans-serif;
+  background:radial-gradient(ellipse at 50% 0%, #14201a 0%, #0a0d0b 55%, #060807 100%);
+  color:var(--paper);
+  height:100vh;
+  height:100dvh;
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+}
+
+/* ============ طبقات الخلفية ============ */
+.bg-photo{
+  position:fixed; inset:0;
+  background-image:var(--bg-image), radial-gradient(ellipse at 50% 40%, #1a2e24 0%, #0a0d0b 70%);
+  background-size:cover;
+  background-position:center 40%;
+  background-color:#1a2420;
+  filter:brightness(var(--bg-brightness)) contrast(var(--bg-contrast)) saturate(var(--bg-saturation));
+  transform:scale(1.04);
+  z-index:0;
+  animation:slowZoom 36s ease-in-out infinite alternate;
+}
+@keyframes slowZoom{
+  from{transform:scale(1.04) translateY(0);}
+  to{transform:scale(1.10) translateY(-1%);}
+}
+
+.bg-blend{
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 55% at 28% 12%, rgba(200,168,106,.16), transparent 62%),
+    radial-gradient(ellipse 80% 60% at 78% 88%, rgba(16,74,58,.32), transparent 65%),
+    linear-gradient(165deg,
+      rgba(6,9,8,.62) 0%,
+      rgba(6,9,8,.28) 38%,
+      rgba(6,9,8,.35) 62%,
+      rgba(6,9,8,.72) 100%);
+}
+.bg-blend::after{
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(165deg,
+      rgba(6,9,8,.55) 0%,
+      rgba(6,9,8,.10) 42%,
+      rgba(6,9,8,.15) 66%,
+      rgba(6,9,8,.60) 100%);
+}
+
+.bg-pattern{
+  position:fixed; inset:0; z-index:2; pointer-events:none;
+  opacity:.12;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23c8a86a' stroke-width='0.8'%3E%3Cpath d='M48 10 L62 48 L48 86 L34 48 Z'/%3E%3Cpath d='M10 48 L48 34 L86 48 L48 62 Z'/%3E%3Ccircle cx='48' cy='48' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:96px 96px;
+}
+
+.bg-vignette{
+  position:fixed; inset:0; z-index:3; pointer-events:none;
+  box-shadow:inset 0 0 180px 40px rgba(0,0,0,.55);
+}
+
+/* ============ الإطار العام ============ */
+.frame{
+  position:relative;
+  z-index:5;
+  height:100vh;
+  height:100dvh;
+  max-width:1080px;
+  margin:0 auto;
+  padding:clamp(10px,2vh,26px) clamp(16px,4vw,48px) clamp(6px,1.2vh,14px);
+  display:flex;
+  flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);
+}
+
+/* ============ الترويسة ============ */
+.brand{
+  flex-shrink:0;
+  text-align:center;
+  animation:riseIn .9s cubic-bezier(.2,.8,.2,1) both;
+}
+.brand .ornament{
+  display:block;
+  width:clamp(70px,14vw,120px);
+  height:auto;
+  margin:0 auto clamp(2px,.5vh,6px);
+  color:var(--gold);
+  opacity:.9;
+}
+.brand h1{
+  font-family:'Aref Ruqaa',serif;
+  font-weight:400;
+  font-size:clamp(14px,2.6vh,24px);
+  line-height:1.5;
+  letter-spacing:.005em;
+  color:var(--gold-soft);
+  text-shadow:0 0 36px rgba(200,168,106,.5), 0 2px 20px rgba(0,0,0,.95), 0 0 4px rgba(0,0,0,.8);
+  max-width:100%;
+  margin:0 auto;
+  word-break:break-word;
+}
+.brand h1 .deceased-label{color:var(--gold);opacity:.98;}
+.brand h1 .slash{color:var(--muted);opacity:.9;font-weight:300;margin:0 .18em;}
+
+/* ============================================================
+   شريط التنقل
+   ============================================================ */
+.nav-wrap{
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  gap:clamp(6px,1vh,10px);
+  animation:riseIn .9s .1s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.stages-shell{
+  position:relative;
+  border-radius:100px;
+  padding:4px;
+  background:
+    linear-gradient(180deg, rgba(9,13,11,.72), rgba(9,13,11,.42));
+  border:1px solid rgba(200,168,106,.22);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.04),
+    inset 0 -1px 0 rgba(0,0,0,.3);
+  backdrop-filter:blur(14px) saturate(140%);
+  -webkit-backdrop-filter:blur(14px) saturate(140%);
+  overflow:hidden;
+  isolation:isolate;
+}
+.stages-shell::before{
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:1px;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    rgba(200,168,106,.5) 25%,
+    rgba(230,208,161,.7) 50%,
+    rgba(200,168,106,.5) 75%,
+    transparent 100%);
+  opacity:.8;
+  pointer-events:none;
+  z-index:3;
+}
+
+.stages{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:safe center;
+  gap:2px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+  scroll-behavior:smooth;
+}
+.stages::-webkit-scrollbar{display:none;}
+
+.stages-indicator{
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:0;
+  border-radius:100px;
+  background:
+    linear-gradient(135deg,
+      rgba(200,168,106,.42) 0%,
+      rgba(230,208,161,.24) 50%,
+      rgba(200,168,106,.30) 100%);
+  border:1px solid rgba(230,208,161,.55);
+  box-shadow:
+    0 0 0 2px rgba(200,168,106,.08),
+    0 0 22px rgba(200,168,106,.35),
+    0 4px 14px rgba(200,168,106,.18),
+    inset 0 1px 0 rgba(255,255,255,.10);
+  pointer-events:none;
+  z-index:1;
+  transition:
+    left .55s cubic-bezier(.34,1.3,.4,1),
+    top .55s cubic-bezier(.34,1.3,.4,1),
+    width .55s cubic-bezier(.34,1.3,.4,1),
+    height .55s cubic-bezier(.34,1.3,.4,1);
+  will-change:left, top, width, height;
+}
+
+.stage-btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(7px,1vh,10px) clamp(12px,2.1vw,20px);
+  border-radius:100px;
+  border:none;
+  background:transparent;
+  color:var(--muted);
+  font-family:inherit;
+  font-size:clamp(10.5px,1.45vh,12.5px);
+  font-weight:500;
+  letter-spacing:.01em;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  white-space:nowrap;
+  flex-shrink:0;
+  z-index:2;
+  transition:color .35s ease, background-color .35s ease, transform .25s ease;
+}
+.stage-btn:hover{
+  color:var(--gold-soft);
+  background-color:rgba(200,168,106,.06);
+}
+.stage-btn:active{transform:scale(.97);}
+.stage-btn.active{
+  color:var(--gold-soft);
+  font-weight:700;
+  background-color:transparent;
+}
+.stage-btn:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+  border-radius:100px;
+}
+
+.stage-label{
+  position:relative;
+  z-index:1;
+}
+
+.stages-progress{
+  position:relative;
+  height:2px;
+  margin:0 clamp(20px,8vw,60px);
+  background:rgba(200,168,106,.08);
+  border-radius:2px;
+  overflow:hidden;
+}
+.stages-progress::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    rgba(200,168,106,.06) 50%,
+    transparent 100%);
+  pointer-events:none;
+}
+.stages-progress-fill{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  width:20%;
+  background:linear-gradient(90deg,
+    rgba(200,168,106,.3) 0%,
+    var(--gold) 55%,
+    var(--gold-soft) 100%);
+  border-radius:2px;
+  box-shadow:
+    0 0 8px rgba(200,168,106,.6),
+    0 0 16px rgba(200,168,106,.3);
+  transition:width .7s cubic-bezier(.34,1.15,.4,1);
+  will-change:width;
+}
+
+/* ============ منطقة المحتوى ============ */
+.panel{
+  flex:1;
+  min-height:0;
+  position:relative;
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+}
+
+.view{
+  display:none;
+  flex-direction:column;
+  width:100%;
+  height:100%;
+  min-height:0;
+}
+.view.active{
+  display:flex;
+  animation:viewIn .55s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes viewIn{
+  from{opacity:0;transform:translateY(12px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes riseIn{
+  from{opacity:0;transform:translateY(14px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.view-content{
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(200,168,106,.35) transparent;
+  display:flex;
+  flex-direction:column;
+}
+.view-content::-webkit-scrollbar{width:5px;}
+.view-content::-webkit-scrollbar-track{background:transparent;}
+.view-content::-webkit-scrollbar-thumb{background:rgba(200,168,106,.35);border-radius:3px;}
+
+.view-content .inner{
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(4px,1vh,12px) 2px;
+  gap:clamp(8px,1.4vh,16px);
+}
+
+/* ============ آيات الموت ============ */
+.verses-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(8px,1.5vh,16px);
+}
+.verses-caption{
+  font-size:clamp(9.5px,1.4vh,12px);
+  letter-spacing:.28em;
+  color:var(--gold);
+  opacity:.95;
+  font-weight:600;
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+}
+.verses{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(6px,1.2vh,12px);
+  width:100%;
+  max-width:660px;
+}
+.verse{text-align:center;padding:0 clamp(2px,1vw,8px);}
+.verse p{
+  font-family:'Amiri',serif;
+  font-size:clamp(15px,2.6vh,23px);
+  line-height:1.72;
+  font-weight:700;
+  color:#faf5e8;
+  text-shadow:0 2px 20px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,.9);
+}
+.verse span{
+  display:block;
+  margin-top:clamp(2px,.5vh,6px);
+  font-size:clamp(9.5px,1.4vh,12px);
+  letter-spacing:.14em;
+  color:var(--gold-soft);
+  opacity:.95;
+  font-weight:500;
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+}
+.vsep{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:clamp(90px,20vw,160px);
+  color:var(--gold);
+  opacity:.65;
+}
+.vsep::before,.vsep::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg,transparent,currentColor,transparent);
+}
+.vsep i{
+  width:6px;height:6px;
+  border:1px solid currentColor;
+  transform:rotate(45deg);
+  flex-shrink:0;
+}
+
+/* ============ قسم السور ============ */
+.surahs-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(6px,1.2vh,14px);
+  width:100%;
+  max-width:600px;
+  margin:0 auto;
+}
+.surahs-caption{
+  font-size:clamp(9.5px,1.4vh,12px);
+  letter-spacing:.28em;
+  color:var(--gold);
+  opacity:.95;
+  font-weight:600;
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+  text-align:center;
+}
+.surah{
+  text-align:center;
+  padding:0 clamp(2px,1vw,8px);
+  width:100%;
+}
+.surah-title{
+  font-family:'Aref Ruqaa',serif;
+  font-size:clamp(14px,2.2vh,19px);
+  color:var(--gold-soft);
+  margin-bottom:clamp(2px,.5vh,6px);
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+}
+.surah-basmala{
+  font-family:'Amiri',serif;
+  font-size:clamp(11px,1.6vh,14px);
+  color:var(--muted);
+  margin-bottom:clamp(2px,.5vh,6px);
+  opacity:.85;
+  text-shadow:0 1px 8px rgba(0,0,0,.8);
+}
+.surah-text{
+  font-family:'Amiri',serif;
+  font-size:clamp(13px,2.1vh,18px);
+  line-height:1.9;
+  font-weight:700;
+  color:#faf5e8;
+  text-shadow:0 2px 18px rgba(0,0,0,1), 0 0 6px rgba(0,0,0,.85);
+}
+
+/* ============ زر CTA ============ */
+.cta{
+  margin-top:clamp(8px,1.6vh,18px);
+  display:inline-flex;
+  align-items:center;
+  gap:clamp(7px,1.6vw,12px);
+  padding:clamp(8px,1.5vh,13px) clamp(20px,5vw,38px);
+  border-radius:100px;
+  font-family:inherit;
+  font-size:clamp(12px,1.9vh,15.5px);
+  font-weight:700;
+  letter-spacing:.03em;
+  color:#12160f;
+  background:linear-gradient(135deg,#e6d0a1 0%,#c8a86a 55%,#a8894f 100%);
+  border:1px solid rgba(230,208,161,.85);
+  box-shadow:0 0 0 5px rgba(200,168,106,.10), 0 10px 34px rgba(200,168,106,.35);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, filter .3s ease;
+  animation:ctaGlow 3.6s ease-in-out infinite;
+}
+@keyframes ctaGlow{
+  0%,100%{box-shadow:0 0 0 5px rgba(200,168,106,.10), 0 10px 34px rgba(200,168,106,.30);}
+  50%{box-shadow:0 0 0 7px rgba(200,168,106,.16), 0 12px 44px rgba(200,168,106,.45);}
+}
+.cta:hover{transform:translateY(-2px);filter:brightness(1.05);}
+.cta:active{transform:translateY(0) scale(.985);}
+.cta:focus-visible{outline:2px solid var(--gold-soft);outline-offset:5px;}
+.cta svg{width:1.05em;height:1.05em;flex-shrink:0;}
+
+/* ============ المرحلة ٤: الدعاء ============ */
+.dua-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(10px,1.8vh,18px);
+  max-width:520px;
+  margin:0 auto;
+}
+.dua-text{
+  font-family:'Amiri',serif;
+  font-size:clamp(14px,2.4vh,21px);
+  line-height:2.05;
+  font-weight:400;
+  color:#faf5e8;
+  max-width:34ch;
+  margin:0 auto;
+  text-shadow:0 2px 18px rgba(0,0,0,1), 0 0 6px rgba(0,0,0,.85);
+  transition:opacity .25s ease;
+}
+.dua-src{
+  font-size:clamp(10px,1.5vh,12.5px);
+  letter-spacing:.12em;
+  color:var(--gold-soft);
+  opacity:.95;
+  transition:opacity .25s ease;
+  text-shadow:0 1px 10px rgba(0,0,0,.9);
+}
+
+.dua-next-btn{
+  margin-top:clamp(8px,1.6vh,18px);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(7px,1.5vw,10px);
+  padding:clamp(8px,1.5vh,13px) clamp(24px,6vw,42px);
+  border-radius:100px;
+  font-family:inherit;
+  font-size:clamp(12px,1.9vh,15.5px);
+  font-weight:700;
+  letter-spacing:.03em;
+  color:#12160f;
+  background:linear-gradient(135deg,#e6d0a1 0%,#c8a86a 55%,#a8894f 100%);
+  border:1px solid rgba(230,208,161,.85);
+  box-shadow:0 0 0 5px rgba(200,168,106,.10), 0 10px 34px rgba(200,168,106,.35);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, filter .3s ease, background .4s ease;
+}
+.dua-next-btn:hover{transform:translateY(-2px);filter:brightness(1.05);}
+.dua-next-btn:active{transform:translateY(0) scale(.985);}
+.dua-next-btn:focus-visible{outline:2px solid var(--gold-soft);outline-offset:5px;}
+.dua-next-btn svg{width:1.1em;height:1.1em;flex-shrink:0;}
+
+.dua-next-btn .icon-finish{display:none;}
+.dua-next-btn.finish .icon-next{display:none;}
+.dua-next-btn.finish .icon-finish{display:inline-block;}
+
+.dua-next-btn.finish{
+  background:linear-gradient(135deg,#c8e8c8 0%,#8fce9f 55%,#5ca877 100%);
+  border-color:rgba(200,232,200,.85);
+  box-shadow:0 0 0 5px rgba(120,220,150,.12), 0 10px 34px rgba(120,200,150,.32);
+  color:#0a1f14;
+}
+.dua-next-btn.finish:hover{
+  filter:brightness(1.06);
+  box-shadow:0 0 0 5px rgba(120,220,150,.18), 0 12px 40px rgba(120,200,150,.45);
+}
+
+/* ============================================================
+   المرحلة ٥: تخطيط التسبيح
+   ============================================================ */
+.stage3-layout{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  gap:clamp(6px,1.2vh,12px);
+  width:100%;
+  max-width:600px;
+  margin:0 auto;
+  padding-top:clamp(2px,.6vh,8px);
+}
+
+.tasbih-block{
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(6px,1.2vh,12px);
+  padding-bottom:clamp(4px,.8vh,8px);
+}
+
+.tb-counter-info{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(6px,1.5vw,10px);
+  font-size:clamp(10px,1.4vh,12px);
+  letter-spacing:.06em;
+  color:var(--gold-soft);
+  opacity:.92;
+  text-shadow:0 1px 8px rgba(0,0,0,.9);
+  padding:clamp(3px,.6vh,6px) clamp(10px,2.5vw,16px);
+  border:1px solid var(--line-soft);
+  border-radius:100px;
+  background:rgba(9,13,11,.35);
+  backdrop-filter:blur(4px);
+}
+.tb-counter-info .current{color:var(--gold);opacity:1;font-weight:700;}
+
+.tb-dhikr{
+  font-family:'Amiri',serif;
+  font-size:clamp(17px,2.9vh,24px);
+  font-weight:700;
+  color:#faf5e8;
+  text-shadow:0 2px 18px rgba(0,0,0,1), 0 0 6px rgba(0,0,0,.85);
+  letter-spacing:.01em;
+  transition:opacity .3s ease;
+  text-align:center;
+  line-height:1.55;
+  max-width:600px;
+  min-height:1.55em;
+  padding:0 clamp(4px,2vw,12px);
+}
+
+.tasbih-counter-wrap{
+  position:relative;
+  width:clamp(150px,22vh,210px);
+  height:clamp(150px,22vh,210px);
+  margin:clamp(2px,.5vh,6px) auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.tasbih-counter-wrap::before{
+  content:'';
+  position:absolute;
+  inset:-18px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(200,168,106,.16), transparent 68%);
+  pointer-events:none;
+  animation:counterGlow 3.4s ease-in-out infinite;
+  z-index:-1;
+}
+@keyframes counterGlow{
+  0%,100%{opacity:.55;transform:scale(.98);}
+  50%{opacity:1;transform:scale(1.04);}
+}
+
+.tasbih-block.done .tasbih-counter-wrap::before{
+  background:radial-gradient(circle, rgba(120,220,150,.20), transparent 68%);
+}
+
+.counter-ring{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  transform:rotate(-90deg);
+  overflow:visible;
+}
+
+.ring-bg{
+  fill:none;
+  stroke:rgba(200,168,106,.14);
+  stroke-width:9;
+}
+
+.ring-progress{
+  fill:none;
+  stroke:url(#goldGradient);
+  stroke-width:9;
+  stroke-linecap:round;
+  stroke-dasharray:100;
+  stroke-dashoffset:100;
+  transition:stroke-dashoffset .35s cubic-bezier(.2,.8,.2,1), stroke .5s ease;
+  filter:drop-shadow(0 0 6px rgba(200,168,106,.65));
+}
+
+.tasbih-block.done .ring-progress{
+  stroke:url(#greenGradient);
+  filter:drop-shadow(0 0 8px rgba(120,220,150,.75));
+}
+
+.counter-display{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  z-index:1;
+  text-align:center;
+}
+
+.counter-num{
+  font-family:'Amiri',serif;
+  font-size:clamp(44px,8.5vh,72px);
+  font-weight:700;
+  line-height:1;
+  color:var(--gold-soft);
+  text-shadow:
+    0 0 30px rgba(200,168,106,.75),
+    0 2px 12px rgba(0,0,0,.95);
+  transition:color .45s ease, text-shadow .45s ease;
+}
+
+.tasbih-block.done .counter-num{
+  color:#b8f0cc;
+  text-shadow:
+    0 0 30px rgba(120,220,150,.85),
+    0 2px 12px rgba(0,0,0,.95);
+}
+
+.counter-target{
+  font-size:clamp(11px,1.5vh,13px);
+  letter-spacing:.08em;
+  color:var(--muted);
+  font-weight:500;
+  text-shadow:0 1px 6px rgba(0,0,0,.8);
+}
+.counter-target span{
+  color:var(--gold);
+  font-weight:700;
+  font-size:1.05em;
+}
+.tasbih-block.done .counter-target span{color:#9fe0b4;}
+
+/* --- شارة "هل تريد إعادة تسبيح هذا الذكر؟" --- */
+.tb-repeat-notice{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:clamp(6px,1.2vw,10px);
+  width:100%;
+  max-width:420px;
+  padding:clamp(6px,1vh,9px) clamp(10px,2.5vw,16px);
+  border:1px solid rgba(120,220,150,.45);
+  border-radius:100px;
+  background:linear-gradient(135deg, rgba(120,220,150,.14), rgba(120,220,150,.06));
+  color:#c8f0d4;
+  font-size:clamp(10px,1.4vh,12px);
+  font-weight:500;
+  letter-spacing:.02em;
+  text-align:center;
+  box-shadow:0 0 0 3px rgba(120,220,150,.08), 0 6px 20px rgba(120,220,150,.15);
+  animation:repeatIn .45s cubic-bezier(.34,1.3,.4,1) both;
+}
+.tb-repeat-notice[hidden]{display:none;}
+@keyframes repeatIn{
+  from{opacity:0;transform:translateY(-6px) scale(.96);}
+  to{opacity:1;transform:translateY(0) scale(1);}
+}
+.tb-repeat-text{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+}
+.tb-repeat-text svg{
+  width:13px;
+  height:13px;
+  flex-shrink:0;
+  color:#9fe0b4;
+}
+.tb-repeat-btn{
+  display:inline-flex;
+  align-items:center;
+  padding:3px clamp(8px,1.6vw,12px);
+  border:1px solid rgba(200,232,200,.7);
+  border-radius:100px;
+  background:rgba(120,220,150,.20);
+  color:#e8fff0;
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:700;
+  letter-spacing:.02em;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:all .25s ease;
+}
+.tb-repeat-btn:hover{
+  background:rgba(120,220,150,.32);
+  border-color:rgba(200,232,200,.95);
+  transform:translateY(-1px);
+}
+.tb-repeat-btn:active{transform:translateY(0) scale(.97);}
+.tb-repeat-btn:focus-visible{outline:1px solid #9fe0b4;outline-offset:2px;}
+
+.tasbih-btn{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:100%;
+  max-width:300px;
+  margin:clamp(5px,1vh,10px) auto 0;
+  padding:clamp(12px,2vh,17px) clamp(20px,4vw,34px);
+  border-radius:100px;
+  border:2px solid rgba(230,208,161,.9);
+  background:linear-gradient(135deg,#e6d0a1 0%,#c8a86a 55%,#a8894f 100%);
+  color:#12160f;
+  font-family:inherit;
+  font-size:clamp(15px,2.2vh,19px);
+  font-weight:700;
+  letter-spacing:.05em;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+  box-shadow:
+    0 0 0 5px rgba(200,168,106,.12),
+    0 12px 32px rgba(200,168,106,.42),
+    inset 0 1px 0 rgba(255,255,255,.35);
+  transition:transform .16s cubic-bezier(.2,.8,.2,1),
+             box-shadow .3s ease,
+             background .5s ease,
+             color .5s ease,
+             border-color .5s ease;
+}
+
+.tasbih-btn::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 55%);
+  pointer-events:none;
+}
+
+.tasbih-btn:hover{filter:brightness(1.05);}
+.tasbih-btn:active{transform:scale(.965);}
+.tasbih-btn:focus-visible{outline:2px solid var(--gold-soft);outline-offset:6px;}
+.tasbih-btn.pop{animation:btnPop .3s cubic-bezier(.2,.8,.2,1);}
+
+@keyframes btnPop{
+  0%{transform:scale(1);}
+  45%{transform:scale(1.055);}
+  100%{transform:scale(1);}
+}
+
+.btn-text{
+  position:relative;
+  z-index:1;
+}
+
+.tasbih-block.done .tasbih-btn{
+  background:linear-gradient(135deg,#c8e8c8 0%,#8fce9f 55%,#5ca877 100%);
+  border-color:rgba(200,232,200,.9);
+  color:#0a1f14;
+  box-shadow:
+    0 0 0 5px rgba(120,220,150,.15),
+    0 12px 32px rgba(120,200,150,.4),
+    inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+/* ============ خانة الأذكار ============ */
+.adhkar-box{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(200,168,106,.28);
+  border-radius:8px;
+  background:linear-gradient(180deg, rgba(9,13,11,.62), rgba(9,13,11,.48));
+  backdrop-filter:blur(6px);
+  overflow:hidden;
+  box-shadow:inset 0 0 30px rgba(0,0,0,.4), 0 4px 20px rgba(0,0,0,.3);
+}
+
+.scroll-hint{
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:clamp(5px,.9vh,9px) 10px;
+  font-size:clamp(9px,1.25vh,10.5px);
+  letter-spacing:.08em;
+  color:var(--gold);
+  opacity:.85;
+  border-bottom:1px solid var(--line-soft);
+  background:rgba(200,168,106,.06);
+}
+.scroll-hint svg{
+  width:11px;
+  height:11px;
+  flex-shrink:0;
+  animation:bounce 1.8s ease-in-out infinite;
+}
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(2.5px);}
+}
+
+.athkar{
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(200,168,106,.5) transparent;
+  padding:clamp(4px,.9vh,8px);
+  display:flex;
+  flex-direction:column;
+  gap:clamp(3px,.6vh,5px);
+  text-align:right;
+}
+.athkar::-webkit-scrollbar{width:5px;}
+.athkar::-webkit-scrollbar-track{background:transparent;}
+.athkar::-webkit-scrollbar-thumb{
+  background:rgba(200,168,106,.5);
+  border-radius:3px;
+}
+.athkar::-webkit-scrollbar-thumb:hover{
+  background:rgba(200,168,106,.7);
+}
+
+.dhikr-row{
+  display:flex;
+  align-items:center;
+  gap:clamp(6px,2vw,12px);
+  padding:clamp(4px,.8vh,7px) clamp(8px,2vw,12px);
+  border:1px solid var(--line-soft);
+  border-radius:4px;
+  background:linear-gradient(90deg, rgba(200,168,106,.07), rgba(200,168,106,.015));
+  transition:border-color .35s ease, background .35s ease, opacity .35s ease;
+}
+.dhikr-row .dhikr-check{
+  display:none;
+  flex-shrink:0;
+  color:#9fe0b4;
+  font-weight:700;
+  font-size:clamp(11px,1.5vh,13px);
+  line-height:1;
+  text-shadow:0 0 8px rgba(120,220,150,.6);
+}
+.dhikr-row .dhikr-text{flex:1;min-width:0;}
+.dhikr-row .repeat{
+  flex-shrink:0;
+  font-size:clamp(8.5px,1.2vh,10px);
+  font-weight:700;
+  letter-spacing:.04em;
+  color:var(--gold);
+  border:1px solid var(--line);
+  border-radius:100px;
+  padding:1px 7px;
+  white-space:nowrap;
+}
+
+.dhikr-row.completed{
+  border-color:rgba(120,220,150,.30);
+  background:linear-gradient(90deg, rgba(120,220,150,.10), rgba(120,220,150,.02));
+}
+.dhikr-row.completed .dhikr-check{display:inline-block;}
+.dhikr-row.completed .repeat{
+  color:#9fe0b4;
+  border-color:rgba(120,220,150,.35);
+}
+.dhikr-row.completed p{color:#dff5e6;}
+
+.dhikr-row.current{
+  border-color:rgba(200,168,106,.55);
+  background:linear-gradient(90deg, rgba(200,168,106,.20), rgba(200,168,106,.05));
+  box-shadow:0 0 0 2px rgba(200,168,106,.10);
+}
+.dhikr-row.current p{color:#f7f1e3;}
+
+.dhikr-row p{
+  font-family:'Amiri',serif;
+  font-size:clamp(10px,1.5vh,13px);
+  line-height:1.55;
+  color:#f7f1e3;
+  text-shadow:0 1px 6px rgba(0,0,0,.7);
+}
+
+/* ============ زر الرجوع للسابق ============ */
+.back-btn{
+  flex-shrink:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  margin:clamp(4px,1vh,10px) auto 0;
+  padding:clamp(6px,1.1vh,9px) clamp(16px,4vw,26px);
+  border:1px solid var(--line);
+  border-radius:100px;
+  background:rgba(9,13,11,.4);
+  color:var(--gold-soft);
+  font-family:inherit;
+  font-size:clamp(10.5px,1.6vh,13px);
+  letter-spacing:.04em;
+  cursor:pointer;
+  transition:all .3s ease;
+  -webkit-tap-highlight-color:transparent;
+  backdrop-filter:blur(3px);
+}
+.back-btn:hover:not(:disabled){
+  background:rgba(200,168,106,.14);
+  border-color:rgba(200,168,106,.6);
+  transform:translateY(-1px);
+}
+.back-btn:active:not(:disabled){transform:translateY(0) scale(.97);}
+.back-btn:focus-visible{outline:1px solid var(--gold);outline-offset:4px;}
+.back-btn svg{width:14px;height:14px;flex-shrink:0;}
+
+.back-btn:disabled,
+.back-btn[disabled]{
+  opacity:.35;
+  cursor:not-allowed;
+  border-color:var(--line-soft);
+  color:var(--muted);
+  background:rgba(9,13,11,.25);
+}
+
+/* ============ التذييل ============ */
+.foot{
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(3px,.6vh,6px);
+  padding-top:clamp(2px,.5vh,6px);
+  text-align:center;
+  animation:riseIn .9s .2s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.foot-verse{
+  font-size:clamp(9px,1.3vh,11px);
+  letter-spacing:.1em;
+  color:rgba(210,200,180,.75);
+  text-shadow:0 1px 8px rgba(0,0,0,.9);
+}
+
+.credit{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(4px,.8vh,8px);
+  text-align:center;
+  max-width:100%;
+}
+
+.credit-label{
+  font-size:clamp(8.5px,1.05vh,10px);
+  letter-spacing:.03em;
+  color:rgba(210,200,180,.68);
+  text-shadow:0 1px 6px rgba(0,0,0,.9);
+  white-space:nowrap;
+}
+
+.credit-links{
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(6px,1.5vw,12px);
+  max-width:100%;
+}
+
+.credit-link{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:3px clamp(8px,1.8vw,14px);
+  border:1px solid var(--line-soft);
+  border-radius:100px;
+  background:rgba(9,13,11,.45);
+  color:var(--gold-soft);
+  text-decoration:none;
+  font-family:inherit;
+  font-size:clamp(9.5px,1.25vh,11.5px);
+  font-weight:500;
+  letter-spacing:.02em;
+  white-space:nowrap;
+  flex-shrink:0;
+  transition:all .3s cubic-bezier(.2,.8,.2,1);
+  -webkit-tap-highlight-color:transparent;
+  backdrop-filter:blur(3px);
+}
+.credit-link:hover{
+  color:#fff8e6;
+  border-color:rgba(200,168,106,.7);
+  background:rgba(200,168,106,.16);
+  transform:translateY(-1px);
+  box-shadow:0 4px 14px rgba(200,168,106,.22);
+}
+.credit-link:active{transform:translateY(0) scale(.97);}
+.credit-link:focus-visible{outline:1px solid var(--gold);outline-offset:3px;}
+.credit-link svg{
+  width:11px;
+  height:11px;
+  flex-shrink:0;
+  opacity:.95;
+}
+.credit-name{
+  direction:ltr;
+  unicode-bidi:isolate;
+  letter-spacing:.02em;
+}
+
+/* ============ استجابة الشاشات القصيرة ============ */
+@media (max-height:760px){
+  .brand .ornament{margin-bottom:1px;}
+}
+@media (max-height:680px){
+  .tasbih-counter-wrap{
+    width:clamp(130px,18vh,170px);
+    height:clamp(130px,18vh,170px);
+  }
+  .counter-num{font-size:clamp(38px,7vh,58px);}
+  .tasbih-btn{
+    padding:clamp(10px,1.7vh,14px) clamp(18px,3.5vw,28px);
+    font-size:clamp(13.5px,2vh,17px);
+    max-width:270px;
+  }
+  .tb-dhikr{font-size:clamp(15px,2.4vh,20px);}
+  .tb-repeat-notice{font-size:clamp(9.5px,1.3vh,11px);}
+}
+@media (max-height:600px){
+  .brand h1{font-size:clamp(13px,2.3vh,18px);}
+  .brand .ornament{display:none;}
+  .stage-btn{padding:5px 10px;font-size:9.5px;}
+  .verses-caption{display:none;}
+  .dua-text{line-height:1.85;}
+  .foot-verse{display:none;}
+  .stages-progress{height:1.5px;margin:0 30px;}
+  .tasbih-counter-wrap{
+    width:clamp(110px,16vh,140px);
+    height:clamp(110px,16vh,140px);
+  }
+  .counter-num{font-size:clamp(32px,6vh,46px);}
+  .ring-bg,.ring-progress{stroke-width:8;}
+  .tasbih-btn{
+    padding:clamp(8px,1.5vh,12px) clamp(16px,3.5vw,24px);
+    font-size:clamp(13px,1.9vh,16px);
+    max-width:250px;
+  }
+  .tb-counter-info{font-size:9.5px;padding:2px 10px;}
+  .tb-dhikr{font-size:clamp(14px,2.2vh,18px);}
+  .dhikr-row{padding:3px 7px;}
+  .dhikr-row p{font-size:9.5px;line-height:1.5;}
+  .credit-label{font-size:8px;}
+  .credit-link{font-size:9px;padding:2px 7px;}
+  .credit-link svg{width:9px;height:9px;}
+  .tb-repeat-notice{padding:4px 10px;gap:6px;}
+  .tb-repeat-notice .tb-repeat-btn{padding:2px 8px;}
+}
+@media (max-height:520px){
+  .tasbih-counter-wrap{
+    width:96px;
+    height:96px;
+  }
+  .counter-num{font-size:28px;}
+  .counter-target{font-size:9px;}
+  .tasbih-btn{
+    padding:7px 14px;
+    font-size:12.5px;
+    max-width:220px;
+  }
+  .tb-dhikr{font-size:13px;}
+  .tb-counter-info{font-size:8.5px;padding:1px 8px;}
+}
+
+@media (max-width:520px){
+  .stage-btn{padding:6px 10px;font-size:clamp(9.5px,1.35vh,11px);}
+  .stages-progress{margin:0 28px;}
+}
+@media (max-width:480px){
+  .credit-label{font-size:clamp(7.5px,.95vh,9px);}
+  .credit-link{
+    padding:2px 7px;
+    font-size:clamp(8.5px,1.1vh,10.5px);
+    gap:3px;
+  }
+  .credit-link svg{width:9px;height:9px;}
+}
+@media (max-width:380px){
+  .stage-btn{padding:6px 8px;font-size:clamp(9px,1.25vh,10.5px);}
+  .credit-link .credit-name{font-size:.92em;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;}
+  .stages-indicator{transition:none !important;}
+  .stages-progress-fill{transition:none !important;}
+  .ring-progress{transition:none !important;}
+  .tasbih-counter-wrap::before{animation:none !important;}
+  .tb-repeat-notice{animation:none !important;}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-photo"></div>
+<div class="bg-blend"></div>
+<div class="bg-pattern"></div>
+<div class="bg-vignette"></div>
+
+<div class="frame">
+
+  <header class="brand">
+    <svg class="ornament" viewBox="0 0 200 26" fill="none" aria-hidden="true">
+      <path d="M6 13 H74" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+      <path d="M126 13 H194" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+      <path d="M100 3 L110 13 L100 23 L90 13 Z" stroke="currentColor" stroke-width="1.1"/>
+      <path d="M100 7.5 L105.5 13 L100 18.5 L94.5 13 Z" fill="currentColor" opacity=".65"/>
+      <circle cx="82" cy="13" r="1.8" fill="currentColor" opacity=".8"/>
+      <circle cx="118" cy="13" r="1.8" fill="currentColor" opacity=".8"/>
+    </svg>
+    <h1>
+      <span class="deceased-label">المتوفية</span>
+      <span class="slash">/</span>
+      سهام عبدالفتاح محمود محمد كامل
+    </h1>
+  </header>
+
+  <div class="nav-wrap">
+    <div class="stages-shell">
+      <nav class="stages" role="tablist" aria-label="مراحل الموقع">
+        <span class="stages-indicator" id="stageIndicator" aria-hidden="true"></span>
+
+        <button class="stage-btn active" data-stage="1" role="tab" aria-selected="true">
+          <span class="stage-label">آيات الموت</span>
+        </button>
+
+        <button class="stage-btn" data-stage="2" role="tab" aria-selected="false">
+          <span class="stage-label">سورة الفاتحة</span>
+        </button>
+
+        <button class="stage-btn" data-stage="3" role="tab" aria-selected="false">
+          <span class="stage-label">المعوذات</span>
+        </button>
+
+        <button class="stage-btn" data-stage="4" role="tab" aria-selected="false">
+          <span class="stage-label">دعاء للميت</span>
+        </button>
+
+        <button class="stage-btn" data-stage="5" role="tab" aria-selected="false">
+          <span class="stage-label">تسبيح</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="stages-progress" aria-hidden="true">
+      <div class="stages-progress-fill" id="stagesProgressFill"></div>
+    </div>
+  </div>
+
+  <main class="panel">
+
+    <!-- ═══════════ المرحلة ١: آيات الموت ═══════════ -->
+    <section class="view active" data-view="1" role="tabpanel">
+      <div class="view-content">
+        <div class="inner">
+          <div class="verses-wrap">
+
+            <p class="verses-caption">آيَاتٌ فِي المَوْتِ وَالرُّجُوعِ إِلَى اللَّهِ</p>
+
+            <div class="verses">
+
+              <div class="verse">
+                <p>الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ (١٥٦)</p>
+                <span>سورة البقرة · ١٥٦</span>
+              </div>
+
+              <div class="vsep" aria-hidden="true"><i></i></div>
+
+              <div class="verse">
+                <p>كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۖ ثُمَّ إِلَيْنَا تُرْجَعُونَ (٥٧)</p>
+                <span>سورة العنكبوت · ٥٧</span>
+              </div>
+
+              <div class="vsep" aria-hidden="true"><i></i></div>
+
+              <div class="verse">
+                <p>كُلُّ مَنْ عَلَيْهَا فَانٍ (٢٦) وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ (٢٧)</p>
+                <span>سورة الرحمن · ٢٦ - ٢٧</span>
+              </div>
+
+            </div>
+
+            <button class="cta" data-goto="2">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 5 L16 12 L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              انتقل لقسم سورة الفاتحة
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ المرحلة ٢: سورة الفاتحة ═══════════ -->
+    <section class="view" data-view="2" role="tabpanel">
+      <div class="view-content">
+        <div class="inner">
+          <div class="surahs-wrap">
+
+            <p class="surahs-caption">سُورَةُ الفَاتِحَة</p>
+
+            <div class="surah">
+              <p class="surah-title">سورة الفاتحة</p>
+              <p class="surah-text">
+                بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ (١)<br>
+                ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ (٢)<br>
+                ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ (٣)<br>
+                مَٰلِكِ يَوۡمِ ٱلدِّينِ (٤)<br>
+                إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ (٥)<br>
+                ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ (٦)<br>
+                صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ (٧)
+              </p>
+            </div>
+
+            <button class="cta" data-goto="3">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 5 L16 12 L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              انتقل لقسم المعوذات
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ المرحلة ٣: المعوذات ═══════════ -->
+    <section class="view" data-view="3" role="tabpanel">
+      <div class="view-content">
+        <div class="inner">
+          <div class="surahs-wrap">
+
+            <p class="surahs-caption">سُورَةُ الإِخْلَاصِ وَالفَلَقِ وَالنَّاسِ</p>
+
+            <div class="surah">
+              <p class="surah-title">سورة الإخلاص</p>
+              <p class="surah-basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+              <p class="surah-text">قُلۡ هُوَ ٱللَّهُ أَحَدٌ (١) ٱللَّهُ ٱلصَّمَدُ (٢) لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ (٣) وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ (٤)</p>
+            </div>
+
+            <div class="vsep" aria-hidden="true"><i></i></div>
+
+            <div class="surah">
+              <p class="surah-title">سورة الفلق</p>
+              <p class="surah-basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+              <p class="surah-text">قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ (١) مِن شَرِّ مَا خَلَقَ (٢) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (٣) وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ (٤) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (٥)</p>
+            </div>
+
+            <div class="vsep" aria-hidden="true"><i></i></div>
+
+            <div class="surah">
+              <p class="surah-title">سورة الناس</p>
+              <p class="surah-basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+              <p class="surah-text">قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ (١) مَلِكِ ٱلنَّاسِ (٢) إِلَٰهِ ٱلنَّاسِ (٣) مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ (٤) ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ (٥) مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ (٦)</p>
+            </div>
+
+            <button class="cta" data-goto="4">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 5 L16 12 L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              انتقل لقسم دعاء للميت
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ المرحلة ٤: دعاء للميت ═══════════ -->
+    <section class="view" data-view="4" role="tabpanel">
+      <div class="view-content">
+        <div class="inner">
+          <div class="dua-wrap">
+
+            <p class="dua-text" id="duaText"></p>
+            <p class="dua-src" id="duaSrc"></p>
+
+            <button class="dua-next-btn" id="duaNextBtn" type="button">
+              <span id="duaBtnLabel">التالي</span>
+              <svg class="icon-next" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M15 5 L8 12 L15 19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-finish" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12.5 L10 17.5 L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" id="duaBackBtn" type="button" disabled>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 19 L8 12 L15 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        رجوع للسابق
+      </button>
+    </section>
+
+    <!-- ═══════════ المرحلة ٥: تسبيح ═══════════ -->
+    <section class="view" data-view="5" role="tabpanel">
+      <div class="stage3-layout">
+
+        <div class="tasbih-block" id="tasbihBlock">
+
+          <p class="tb-counter-info">
+            الذكر <span class="current" id="tbIndex">١</span> من <span id="tbTotal">١٤</span>
+          </p>
+
+          <p class="tb-dhikr" id="tbDhikr">الله أكبر، الحمدلله، سبحان الله</p>
+
+          <div class="tasbih-counter-wrap">
+            <svg class="counter-ring" viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e6d0a1"/>
+                  <stop offset="50%" stop-color="#c8a86a"/>
+                  <stop offset="100%" stop-color="#a8894f"/>
+                </linearGradient>
+                <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#c8e8c8"/>
+                  <stop offset="50%" stop-color="#8fce9f"/>
+                  <stop offset="100%" stop-color="#5ca877"/>
+                </linearGradient>
+              </defs>
+              <circle class="ring-bg" cx="100" cy="100" r="88"/>
+              <circle class="ring-progress" cx="100" cy="100" r="88" pathLength="100" id="ringProgress"/>
+            </svg>
+            <div class="counter-display">
+              <span class="counter-num" id="tbNum">٠</span>
+              <span class="counter-target">من <span id="tbTargetNum">٣٣</span></span>
+            </div>
+          </div>
+
+          <!-- شارة "هل تريد إعادة التسبيح؟" -->
+          <div class="tb-repeat-notice" id="tbRepeatNotice" hidden>
+            <span class="tb-repeat-text">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12.5 L10 17.5 L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              لقد أتممت تسبيح هذا الذكر
+            </span>
+            <button class="tb-repeat-btn" id="tbRepeatBtn" type="button">
+              إعادة التسبيح؟
+            </button>
+          </div>
+
+          <button class="tasbih-btn" id="tbBtn" type="button" aria-label="عدّاد التسبيح">
+            <span class="btn-text" id="tbBtnText">اضغط للتسبيح</span>
+          </button>
+
+        </div>
+
+        <div class="adhkar-box">
+
+          <div class="scroll-hint">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 4 V20 M6 14 L12 20 L18 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            مرر جزء التسبيحات لعرضها جميعاً
+          </div>
+
+          <div class="athkar" id="athkarList"></div>
+
+        </div>
+
+      </div>
+
+      <button class="back-btn" id="tbBackBtn" type="button" disabled>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 19 L8 12 L15 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        رجوع للسابق
+      </button>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+
+    <p class="foot-verse">﴿ وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ ﴾</p>
+
+    <div class="credit">
+      <span class="credit-label">تم برمجة هذا الموقع بواسطة المبرمج</span>
+
+      <div class="credit-links">
+        <a class="credit-link"
+           href="https://www.facebook.com/share/1F4R2zgotF/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Mohamed M. Salah El-Din على فيسبوك"
+           title="Facebook — Mohamed M. Salah El-Din">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M15.5 3h-2.2C10.9 3 9.5 4.5 9.5 6.9V9H7.4v3h2.1v9h3.1v-9h2.4l.4-3h-2.8V7.2c0-.9.3-1.4 1.4-1.4h1.5V3z"/>
+          </svg>
+          <span class="credit-name">Mohamed M. Salah El-Din</span>
+        </a>
+
+        <a class="credit-link"
+           href="https://www.linkedin.com/in/mohamed-m-salah-el-din-519683342?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Mohamed M. Salah El-Din على لينكدإن"
+           title="LinkedIn — Mohamed M. Salah El-Din">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 9h4v12H3V9zm6 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.7c0-1.36-.03-3.1-1.9-3.1-1.9 0-2.19 1.47-2.19 3V21H9V9z"/>
+          </svg>
+          <span class="credit-name">Mohamed M. Salah El-Din</span>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  const toArabic = n => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+
+  /* ============================================================
+     نظام المراحل + شريط التنقل
+     ============================================================ */
+  const stageBtns      = document.querySelectorAll('.stage-btn');
+  const views          = document.querySelectorAll('.view');
+  const stagesEl       = document.querySelector('.stages');
+  const stageIndicator = document.getElementById('stageIndicator');
+  const progressFill   = document.getElementById('stagesProgressFill');
+
+  function updateIndicator() {
+    if (!stageIndicator || !stagesEl) return;
+    const active = stagesEl.querySelector('.stage-btn.active');
+    if (!active) return;
+
+    stageIndicator.style.left   = active.offsetLeft   + 'px';
+    stageIndicator.style.top    = active.offsetTop    + 'px';
+    stageIndicator.style.width  = active.offsetWidth  + 'px';
+    stageIndicator.style.height = active.offsetHeight + 'px';
+  }
+
+  function updateProgress(n) {
+    if (!progressFill) return;
+    const total = stageBtns.length || 1;
+    const percent = Math.max(0, Math.min(100, (Number(n) / total) * 100));
+    progressFill.style.width = percent + '%';
+  }
+
+  function scrollActiveIntoView() {
+    if (!stagesEl) return;
+    if (stagesEl.scrollWidth <= stagesEl.clientWidth + 1) return;
+    const active = stagesEl.querySelector('.stage-btn.active');
+    if (!active) return;
+    try {
+      active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    } catch (_) {
+      const target = active.offsetLeft - (stagesEl.clientWidth - active.offsetWidth) / 2;
+      stagesEl.scrollTo({ left: target, behavior: 'smooth' });
+    }
+  }
+
+  function initIndicator() {
+    if (!stageIndicator) return;
+    stageIndicator.style.transition = 'none';
+    updateIndicator();
+    void stageIndicator.offsetWidth;
+    stageIndicator.style.transition = '';
+  }
+
+  function activateStage(n) {
+    stageBtns.forEach(b => {
+      const active = b.dataset.stage === String(n);
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    views.forEach(v => {
+      v.classList.toggle('active', v.dataset.view === String(n));
+    });
+
+    updateIndicator();
+    updateProgress(n);
+    scrollActiveIntoView();
+
+    const activeView = document.querySelector('.view[data-view="' + n + '"]');
+    if (activeView) {
+      const content = activeView.querySelector('.view-content');
+      if (content) content.scrollTop = 0;
+      const athkarBox = activeView.querySelector('.athkar');
+      if (athkarBox) athkarBox.scrollTop = 0;
+    }
+
+    if (Number(n) === 4) {
+      dIndex = 0;
+      renderDua();
+      updateDuaBtn();
+      updateDuaBackBtn();
+    }
+  }
+
+  stageBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('active')) return;
+      activateStage(btn.dataset.stage);
+    });
+  });
+
+  document.querySelectorAll('[data-goto]').forEach(btn => {
+    btn.addEventListener('click', () => activateStage(btn.dataset.goto));
+  });
+
+  let resizeTimer = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      updateIndicator();
+    }, 120);
+  });
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => updateIndicator());
+  }
+
+  if (window.ResizeObserver && stagesEl) {
+    new ResizeObserver(() => updateIndicator()).observe(stagesEl);
+  }
+
+  /* ============================================================
+     المرحلة ٤: الأدعية
+     ============================================================ */
+  const duas = [
+    {
+      text: 'اللَّهُمَّ اغْفِرْ لَهَا وَارْحَمْهَا، وَعَافِهَا وَاعْفُ عَنْهَا، وَأَكْرِمْ نُزُلَهَا، وَوَسِّعْ مُدْخَلَهَا، وَاغْسِلْهَا بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهَا مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، وَأَبْدِلْهَا دَارًا خَيْرًا مِنْ دَارِهَا، وَأَهْلًا خَيْرًا مِنْ أَهْلِهَا، وَأَدْخِلْهَا الْجَنَّةَ، وَأَعِذْهَا مِنْ عَذَابِ الْقَبْرِ وَمِنْ عَذَابِ النَّارِ',
+      src: 'رواه مسلم'
+    },
+    {
+      text: 'اللَّهُمَّ اجْعَلْ قَبْرَهَا رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ، وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النِّيرَانِ، وَنَوِّرْ لَهَا فِيهِ، وَآمِنْهَا مِنْ فَزَعِ يَوْمِ الْقِيَامَةِ',
+      src: 'دعاء'
+    },
+    {
+      text: 'اللَّهُمَّ آنِسْ وَحْشَتَهَا، وَارْحَمْ غُرْبَتَهَا، وَاجْعَلْهَا مِنْ أَهْلِ الْفِرْدَوْسِ الْأَعْلَى، وَاجْمَعْنَا بِهَا فِي مَقْعَدِ صِدْقٍ عِنْدَ مَلِيكٍ مُقْتَدِرٍ',
+      src: 'دعاء'
+    },
+    {
+      text: 'اللَّهُمَّ ثَبِّتْهَا عِنْدَ السُّؤَالِ، وَلَقِّنْهَا حُجَّتَهَا، وَاجْعَلْ لَهَا مِنْ كُلِّ هَمٍّ فَرَجًا، وَمِنْ كُلِّ ضِيقٍ مَخْرَجًا',
+      src: 'دعاء'
+    }
+  ];
+
+  const duaText      = document.getElementById('duaText');
+  const duaSrc       = document.getElementById('duaSrc');
+  const duaNextBtn   = document.getElementById('duaNextBtn');
+  const duaBtnLabel  = document.getElementById('duaBtnLabel');
+  const duaBackBtn   = document.getElementById('duaBackBtn');
+
+  let dIndex = 0;
+
+  function renderDua() {
+    duaText.textContent = duas[dIndex].text;
+    duaSrc.textContent  = duas[dIndex].src;
+  }
+
+  function updateDuaBtn() {
+    const isLast = dIndex === duas.length - 1;
+    duaBtnLabel.textContent = isLast ? 'انتقل لقسم تسبيح' : 'التالي';
+    duaNextBtn.classList.toggle('finish', isLast);
+  }
+
+  function updateDuaBackBtn() {
+    duaBackBtn.disabled = dIndex === 0;
+  }
+
+  duaNextBtn.addEventListener('click', () => {
+    if (dIndex < duas.length - 1) {
+      dIndex++;
+      duaText.style.opacity = '0';
+      duaSrc.style.opacity  = '0';
+      setTimeout(() => {
+        renderDua();
+        updateDuaBtn();
+        updateDuaBackBtn();
+        duaText.style.opacity = '1';
+        duaSrc.style.opacity  = '1';
+      }, 180);
+    } else {
+      activateStage(5);
+    }
+  });
+
+  duaBackBtn.addEventListener('click', () => {
+    if (dIndex === 0) return;
+    dIndex--;
+    duaText.style.opacity = '0';
+    duaSrc.style.opacity  = '0';
+    setTimeout(() => {
+      renderDua();
+      updateDuaBtn();
+      updateDuaBackBtn();
+      duaText.style.opacity = '1';
+      duaSrc.style.opacity  = '1';
+    }, 180);
+  });
+
+  duaText.style.transition = 'opacity .18s ease';
+  duaSrc.style.transition  = 'opacity .18s ease';
+
+  renderDua();
+  updateDuaBtn();
+  updateDuaBackBtn();
+
+  /* ============================================================
+     المرحلة ٥: التسبيح
+     ============================================================ */
+  const adhkar = [
+    { text: 'الله أكبر، الحمدلله، سبحان الله', target: 33 },
+    { text: 'أستغفر الله', target: 100 },
+    { text: 'الحمدلله', target: 100 },
+    { text: 'سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر', target: 25 },
+    { text: 'سبحان الله العظيم، سبحان الله وبحمده', target: 50 },
+    { text: 'سبحان الله العظيم، سبحان الله وبحمده، لا حول ولا قوة إلا بالله، لا إله إلا أنت سبحانك إني كنت من الظالمين', target: 33 },
+    { text: 'اللهم صل على محمد وآل محمد', target: 100 },
+    { text: 'اللهم صل وسلم وبارك على سيدنا محمد', target: 100 },
+    { text: 'أستغفر الله، سبحان الله وبحمده، سبحان الله العظيم', target: 33 },
+    { text: 'سُبْحَانَ اللَّهِ', target: 100 },
+    { text: 'اللهم صل وسلم وبارك على سيدنا محمد', target: 100 },
+    { text: 'لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ', target: 100 },
+    { text: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ', target: 100 },
+    { text: 'الْحَمْدُ لِلَّهِ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ', target: 100 }
+  ];
+
+  const tasbihBlock    = document.getElementById('tasbihBlock');
+  const tbBtn          = document.getElementById('tbBtn');
+  const tbBtnText      = document.getElementById('tbBtnText');
+  const tbNum          = document.getElementById('tbNum');
+  const tbDhikr        = document.getElementById('tbDhikr');
+  const tbTargetNum    = document.getElementById('tbTargetNum');
+  const tbIndex        = document.getElementById('tbIndex');
+  const tbTotal        = document.getElementById('tbTotal');
+  const athkarList     = document.getElementById('athkarList');
+  const tbBackBtn      = document.getElementById('tbBackBtn');
+  const ringProgress   = document.getElementById('ringProgress');
+  const tbRepeatNotice = document.getElementById('tbRepeatNotice');
+  const tbRepeatBtn    = document.getElementById('tbRepeatBtn');
+
+  /* حالة كل ذكر:
+     completedState[i] = true عندما يُنجز الذكر ويُنتقل عنه */
+  const completedState = {};
+
+  let count = 0;
+  let dhikrIndex = 0;
+
+  function buildAthkarList() {
+    athkarList.innerHTML = adhkar.map((a, i) => `
+      <div class="dhikr-row${i === dhikrIndex ? ' current' : ''}${completedState[i] ? ' completed' : ''}" data-index="${i}">
+        <span class="dhikr-check" aria-hidden="true">✓</span>
+        <div class="dhikr-text"><p>${a.text}</p></div>
+        <span class="repeat">${toArabic(a.target)}</span>
+      </div>
+    `).join('');
+  }
+
+  function highlightCurrentDhikr(scroll) {
+    const rows = athkarList.querySelectorAll('.dhikr-row');
+    rows.forEach((row, i) => {
+      row.classList.toggle('current', i === dhikrIndex);
+      row.classList.toggle('completed', !!completedState[i]);
+    });
+    if (scroll) {
+      const currentRow = rows[dhikrIndex];
+      if (currentRow) {
+        const box = athkarList;
+        const rowTop = currentRow.offsetTop - box.offsetTop;
+        const rowHeight = currentRow.offsetHeight;
+        const boxHeight = box.clientHeight;
+        const target = rowTop - (boxHeight / 2) + (rowHeight / 2);
+        box.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+      }
+    }
+  }
+
+  function paint() {
+    const current = adhkar[dhikrIndex];
+    const isDone  = count >= current.target;
+    const isLast  = dhikrIndex === adhkar.length - 1;
+    const progress = Math.min(1, count / current.target);
+
+    tbNum.textContent       = toArabic(count);
+    tbTargetNum.textContent = toArabic(current.target);
+    tbIndex.textContent     = toArabic(dhikrIndex + 1);
+    tbTotal.textContent     = toArabic(adhkar.length);
+
+    if (ringProgress) {
+      ringProgress.style.strokeDashoffset = String(100 * (1 - progress));
+    }
+
+    if (tasbihBlock) {
+      tasbihBlock.classList.toggle('done', isDone);
+    }
+
+    /* شارة "هل تريد إعادة التسبيح؟"
+       تظهر فقط إذا كان الذكر مُنجزاً سابقاً
+       وكان العدّاد مستقراً على الهدف */
+    if (tbRepeatNotice) {
+      const showRepeat = !!completedState[dhikrIndex] && count === current.target;
+      tbRepeatNotice.hidden = !showRepeat;
+    }
+
+    /* نص الزر الرئيسي:
+       - count < target → «اضغط للتسبيح» (ذهبي)
+       - count >= target → «الذكر التالي» (أخضر)
+       - count >= target + آخر ذكر → «تم الانتهاء ✓» */
+    if (tbBtnText) {
+      if (count >= current.target) {
+        tbBtnText.textContent = isLast ? 'تم الانتهاء ✓' : 'الذكر التالي';
+      } else {
+        tbBtnText.textContent = 'اضغط للتسبيح';
+      }
+    }
+  }
+
+  function updateTbBackBtn() {
+    tbBackBtn.disabled = dhikrIndex === 0;
+  }
+
+  function loadDhikr(scroll) {
+    tbDhikr.style.opacity = '0';
+    setTimeout(() => {
+      tbDhikr.textContent = adhkar[dhikrIndex].text;
+      tbDhikr.style.opacity = '1';
+      paint();
+      highlightCurrentDhikr(scroll !== false);
+      updateTbBackBtn();
+    }, 180);
+  }
+
+  /* زر التسبيح الرئيسي */
+  tbBtn.addEventListener('click', () => {
+    const current = adhkar[dhikrIndex];
+
+    if (count >= current.target) {
+      /* اكتمل العدد → الانتقال للذكر التالي */
+      if (dhikrIndex < adhkar.length - 1) {
+        completedState[dhikrIndex] = true;
+        dhikrIndex++;
+        /* إذا كان الذكر التالي قد أُنجز سابقاً، استعد عدّاده للهدف */
+        count = completedState[dhikrIndex] ? adhkar[dhikrIndex].target : 0;
+        loadDhikr(true);
+      }
+      /* إذا كان آخر ذكر: لا شيء يحدث */
+    } else {
+      /* عدّ عادي */
+      count++;
+    }
+
+    paint();
+
+    tbBtn.classList.remove('pop');
+    void tbBtn.offsetWidth;
+    tbBtn.classList.add('pop');
+
+    if (navigator.vibrate) navigator.vibrate(8);
+  });
+
+  /* زر الرجوع للسابق */
+  tbBackBtn.addEventListener('click', () => {
+    if (dhikrIndex === 0) return;
+    dhikrIndex--;
+    /* إذا كان الذكر السابق مُنجزاً، استعد عدّاده للهدف */
+    count = completedState[dhikrIndex] ? adhkar[dhikrIndex].target : 0;
+    loadDhikr(true);
+  });
+
+  /* زر "إعادة التسبيح؟" */
+  if (tbRepeatBtn) {
+    tbRepeatBtn.addEventListener('click', () => {
+      delete completedState[dhikrIndex];
+      count = 0;
+
+      paint();
+      highlightCurrentDhikr(false);
+
+      tbBtn.classList.remove('pop');
+      void tbBtn.offsetWidth;
+      tbBtn.classList.add('pop');
+
+      if (navigator.vibrate) navigator.vibrate(8);
+    });
+  }
+
+  buildAthkarList();
+  paint();
+  highlightCurrentDhikr(false);
+  updateTbBackBtn();
+
+  /* ============================================================
+     تهيئة المؤشر والتقدم بعد التحميل
+     ============================================================ */
+  window.addEventListener('load', () => {
+    initIndicator();
+    updateProgress(1);
+  });
+
+  if (document.readyState === 'complete') {
+    initIndicator();
+    updateProgress(1);
+  } else {
+    updateIndicator();
+    updateProgress(1);
+  }
+
+})();
+</script>
+</body>
+</html>
